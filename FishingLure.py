@@ -261,7 +261,7 @@ class FishingLure():
 
     def GetResources(self):
         import os
-        return {'Pixmap'  : os.path.join(CurvedShapes.get_module_path(), "~devEnv", "examples", "create-icon", "FishingLure_Page__v1-v9.svg"),
+        return {'Pixmap'  : os.path.join(CurvedShapes.get_module_path(), "~devEnv", "examples", "create-icon", "FishingLure_Page__v1-v91.svg"),
                 'MenuText': QT_TRANSLATE_NOOP("FishingLure", "Fishing Lure"),
                 'ToolTip' : QT_TRANSLATE_NOOP("FishingLure", "Example fishing lure shapes demonstrating the PreserveAspectRatio property of CurvedArray")}
 
