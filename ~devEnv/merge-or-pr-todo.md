@@ -11,6 +11,9 @@ some things had to be done inline with code, etc. here is a list of things to cl
 - [ ] remove folder devenv
 - [ ] double check icon in FishingLure.py! for naming, etc. because i'm still playing with the svg
 - [ ] check that the original examples either render correctly in fc 1.1, or they are broken and it's not my fault
+- [ ] run my fishing lure py example in freecad when i fell 100% done and save that .fcstd file to this dev branch
+- [ ] investigate any .fcstd files in this branch, decide if i need to keep, delete, rename, write a readme, etc. do this AFTER saving an fcstd of fishing lure example menu, because future me will want to know where it is, what it is, how to find it
+- [ ] cleanup every file/folder in ~devEnv, create a future me development readme, archive files in archive folders if necessary, delete or rename if better. make a nice clean branch that has everything future me needs if/when i need to revisit either this PreserveAspectRatio feature, this workbench, or want to refer to notes for working on future workbenches or programmatic FreeCad stuff.
 
 ## feature todos
 
