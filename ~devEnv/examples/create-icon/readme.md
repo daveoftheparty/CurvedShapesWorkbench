@@ -19,6 +19,7 @@
 | ***FishingLure_Page__v1-v6.svg*** | further reduce file size with Claude, getting rid of some inkscape metadata, including xml describing recently used gradients. this is the first icon i actually attach to the Examples menu in the workbench in FreeCAD and have a good visual look at in the GUI. it's kind of a baby bass color scheme with a brownish back, greenish flank, bone belly-- lots of gradients |
 | ***FishingLure_Page__v1-v7.svg*** | working on coloring only. got a firetiger-style gradient, this time a three stop gradient between blue, yellow, orange. I forgot the top of firetiger should be green :D |
 | ***FishingLure_Page__v1-v8.svg*** | firetiger green-yellow-orange, also eliminating the black and white 1px outlines to see if things look better with antialiasing |
+| ***FishingLure_Page__v1-v9.svg*** | let's try to do solid section colors instead of gradients, sticking with firetiger theme. also, gonna take screen shots of this rendering with NO outlines, just three color swatches with no black. |
 
 
 
