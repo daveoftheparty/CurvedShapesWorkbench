@@ -22,7 +22,6 @@ def make_Walk_the_Dog_Sketch(doc):
 
     Walk_the_Dog_Sketch.AttacherEngine = 'Engine Plane'
     Walk_the_Dog_Sketch.Placement = Placement(Vector(0.0, 0.0, 0.0), Rotation(0.5, 0.5, 0.5, 0.4999999999999999))
-    Walk_the_Dog_Sketch.Visibility = False
     Walk_the_Dog_Sketch.ViewObject.Visibility = False
     return Walk_the_Dog_Sketch
 
@@ -33,7 +32,6 @@ def make_Circle_Front_Profile_Sketch(doc):
     Circle_Front_Profile.addGeometry(Part.Circle(Vector(0.0, 0.0, 0.0), Vector(0.0, 0.0, 1.0), 3.0))
     Circle_Front_Profile.AttacherEngine = 'Engine Plane'
     Circle_Front_Profile.Placement = Placement(Vector(0.0, 0.0, 0.0), Rotation(0.7071067811865476, 0.0, 0.0, 0.7071067811865475))
-    Circle_Front_Profile.Visibility = False
     Circle_Front_Profile.ViewObject.Visibility = False
     return Circle_Front_Profile
 
@@ -66,7 +64,6 @@ def make_Crankbait_Side_Profile_Sketch(doc):
     Crankbait_Side_Profile.addGeometry(Part.BSplineCurve([Vector(65.0, -3.43055, 0.0), Vector(46.8361, -3.79737, 0.0), Vector(24.0673543043263, -21.158894372912883, 0.0), Vector(-1.611741877324998, -2.521012393059014, 0.0), Vector(-0.3498518594821344, 4.8227987530242125, 0.0), Vector(20.613143091401366, 16.44234768240592, 0.0), Vector(43.04429502805924, 12.750533643064612, 0.0), Vector(65.0, 1.95716, 0.0)]))
     Crankbait_Side_Profile.AttacherEngine = 'Engine Plane'
     Crankbait_Side_Profile.Placement = Placement(Vector(0.0, 0.0, 0.0), Rotation(0.5, 0.5, 0.5, 0.4999999999999999))
-    Crankbait_Side_Profile.Visibility = False
     Crankbait_Side_Profile.ViewObject.Visibility = False
     return Crankbait_Side_Profile
 
@@ -105,7 +102,6 @@ def make_Crankbait_Top_Profile_Sketch(doc):
     Crankbait_Top_Profile.toggleConstruction(geo17)
     Crankbait_Top_Profile.addGeometry(Part.BSplineCurve([Vector(0.0, -1e-16, 0.0), Vector(8.744147048549669, 0.0, 0.0), Vector(13.213326859405798, 21.330741289041082, 0.0), Vector(9.379940000000003, 33.6794, 0.0), Vector(2.69386, 65.0, 0.0)]))
     Crankbait_Top_Profile.AttacherEngine = 'Engine Plane'
-    Crankbait_Top_Profile.Visibility = False
     Crankbait_Top_Profile.ViewObject.Visibility = False
     return Crankbait_Top_Profile
 
@@ -131,7 +127,6 @@ def make_Flat_Sided_Front_Profile_Sketch(doc):
     Flat_Sided_Front_Profile.addGeometry(Part.ArcOfCircle(Part.Circle(Vector(2.5165288775700403, 3.032004470937678, 0.0), Vector(0.0, 0.0, 1.0), 1.5), 6.13459493932511, 7.486245197298824))
     Flat_Sided_Front_Profile.AttacherEngine = 'Engine Plane'
     Flat_Sided_Front_Profile.Placement = Placement(Vector(0.0, 0.0, 0.0), Rotation(0.7071067811865476, 0.0, 0.0, 0.7071067811865475))
-    Flat_Sided_Front_Profile.Visibility = False
     Flat_Sided_Front_Profile.ViewObject.Visibility = False
     return Flat_Sided_Front_Profile
 
@@ -231,7 +226,6 @@ class FishingLure():
         draw_FishingLure()
 
     def GetResources(self):
-        import CurvedShapes
         import os
         return {'Pixmap'  : os.path.join(CurvedShapes.get_module_path(), "Resources", "icons", "curvedArray.svg"),
                 'MenuText': QT_TRANSLATE_NOOP("FishingLure", "Fishing Lure"),
