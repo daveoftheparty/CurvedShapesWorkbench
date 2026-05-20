@@ -1,0 +1,144 @@
+sha,date,message,change,file
+'099c82a,2026-05-19 13:26,"feat: hook up icon for example",M,./FishingLure.py
+'099c82a,2026-05-19 13:26,"feat: hook up icon for example",M,./README.md
+'099c82a,2026-05-19 13:26,"feat: hook up icon for example",A,./Resources/icons/FishingLure.svg
+'42249e4,2026-05-19 11:41,"dev: icon93",M,./FishingLure.py
+'42249e4,2026-05-19 11:41,"dev: icon93",M,./README.md
+'42249e4,2026-05-19 11:41,"dev: icon93",M,./~devEnv/examples/create-icon/FishingLure_Page__v1-v93.svg
+'42249e4,2026-05-19 11:41,"dev: icon93",M,./~devEnv/examples/create-icon/readme.md
+'c323a7d,2026-05-19 11:30,"dev: icon92 screenshots",A,./~devEnv/examples/create-icon/firetiger-v92-icon-screenshots.png
+'1a96d12,2026-05-19 11:26,"dev: icon 92",M,./FishingLure.py
+'1a96d12,2026-05-19 11:26,"dev: icon 92",M,./README.md
+'1a96d12,2026-05-19 11:26,"dev: icon 92",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v92.svg
+'1a96d12,2026-05-19 11:26,"dev: icon 92",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v93.svg
+'10a0dcd,2026-05-19 11:02,"dev: icon 91 screenshots",A,./~devEnv/examples/create-icon/firetiger-v91-icon-screenshots.png
+'2aaf49a,2026-05-19 10:55,"dev: new icon",M,./FishingLure.py
+'2aaf49a,2026-05-19 10:55,"dev: new icon",M,./README.md
+'2aaf49a,2026-05-19 10:55,"dev: new icon",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v91.svg
+'2aaf49a,2026-05-19 10:55,"dev: new icon",M,./~devEnv/examples/create-icon/readme.md
+'79738bf,2026-05-19 10:50,"dev: icon screenshots",A,./~devEnv/examples/create-icon/firetiger-v9-icon-screenshots.png
+'80832e3,2026-05-19 10:46,"dev: icon 9",M,./FishingLure.py
+'80832e3,2026-05-19 10:46,"dev: icon 9",M,./README.md
+'80832e3,2026-05-19 10:46,"dev: icon 9",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v9.svg
+'80832e3,2026-05-19 10:46,"dev: icon 9",M,./~devEnv/examples/create-icon/readme.md
+'0292b58,2026-05-19 10:07,"dev: icon screenshots",A,./~devEnv/examples/create-icon/firetiger-v8-icon-screenshots.png
+'69628a5,2026-05-19 10:04,"dev: icon: continuing firetiger theme",M,./FishingLure.py
+'69628a5,2026-05-19 10:04,"dev: icon: continuing firetiger theme",M,./README.md
+'69628a5,2026-05-19 10:04,"dev: icon: continuing firetiger theme",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v8.svg
+'69628a5,2026-05-19 10:04,"dev: icon: continuing firetiger theme",M,./~devEnv/examples/create-icon/readme.md
+'7838cae,2026-05-19 09:52,"dev: icon readme notes",M,./~devEnv/examples/create-icon/readme.md
+'86291ff,2026-05-19 09:47,"dev: more icon rendering screenshots",A,./~devEnv/examples/create-icon/firetiger-v7-icon-screenshots.png
+'28cfa2a,2026-05-19 09:44,"dev: trying out firetiger style icon",M,./FishingLure.py
+'28cfa2a,2026-05-19 09:44,"dev: trying out firetiger style icon",M,./README.md
+'ff78008,2026-05-19 09:42,"dev: screenshots for icon",A,./~devEnv/examples/create-icon/baby-bass-v6-icon-screenshots.png
+'40d0bc0,2026-05-19 09:40,"dev: more icon work",M,./README.md
+'40d0bc0,2026-05-19 09:40,"dev: more icon work",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v7.svg
+'40d0bc0,2026-05-19 09:40,"dev: more icon work",M,./~devEnv/merge-or-pr-todo.md
+'a140f1b,2026-05-19 08:52,"dev: icon notes",M,./FishingLure.py
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/FishingLure_Page__.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/FishingLure_Page__v1-v1.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/FishingLure_Page__v1-v2.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/FishingLure_Page__v1-v3.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/FishingLure_Page__v1-v4.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/FishingLure_Page__v1-v5.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/FishingLure_Page__v1-v6.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/FishingLure_Page__v1.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/FishingLure_Page__.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v1.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v2.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v3.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v4.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v5.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/FishingLure_Page__v1-v6.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/FishingLure_Page__v1.svg
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/positioning-camera-for-techdraw-export.md
+'a140f1b,2026-05-19 08:52,"dev: icon notes",A,./~devEnv/examples/create-icon/readme.md
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/positioning-camera-for-techdraw-export.md
+'a140f1b,2026-05-19 08:52,"dev: icon notes",D,./~devEnv/examples/too-small-icon.png
+'7fbc8cd,2026-05-19 08:11,"dev: notes/todos",M,./~devEnv/merge-or-pr-todo.md
+'28d8084,2026-05-18 18:14,"dev: oops point to the latest icon",M,./FishingLure.py
+'36159f2,2026-05-18 18:11,"dev: stuff ain't workin with icon size",M,./FishingLure.py
+'36159f2,2026-05-18 18:11,"dev: stuff ain't workin with icon size",A,./~devEnv/examples/too-small-icon.png
+'36159f2,2026-05-18 18:11,"dev: stuff ain't workin with icon size",M,./~devEnv/merge-or-pr-todo.md
+'626fc70,2026-05-18 17:55,"dev: icons",A,./~devEnv/examples/FishingLure_Page__v1-v6.svg
+'29ff44a,2026-05-18 17:41,"dev: icons",M,./~devEnv/examples/FishingLure_Page__v1-v5.svg
+'7467967,2026-05-18 17:38,"dev: icons",A,./~devEnv/examples/FishingLure_Page__v1-v5.svg
+'6dac1e8,2026-05-18 17:27,"dev: icons",A,./~devEnv/examples/FishingLure_Page__v1-v4.svg
+'e048dcf,2026-05-18 16:40,"dev: icons",A,./~devEnv/examples/FishingLure_Page__v1-v3.svg
+'3c588a6,2026-05-18 16:31,"dev: example: icons",A,./~devEnv/examples/FishingLure_Page__v1-v2.svg
+'c53570f,2026-05-18 15:30,"dev: icon: v1-v1",A,./~devEnv/examples/FishingLure_Page__v1-v1.svg
+'259160e,2026-05-18 15:00,"dev: icon: breadcrumbs",A,./~devEnv/examples/FishingLure_Page__v1.svg
+'259160e,2026-05-18 15:00,"dev: icon: breadcrumbs",M,./~devEnv/examples/positioning-camera-for-techdraw-export.md
+'7da0b0f,2026-05-18 14:56,"dev: resettting camera view (or saving it) for techdraw svg export for icon",A,./~devEnv/examples/positioning-camera-for-techdraw-export.md
+'5dffdb3,2026-05-18 14:41,"feat: kill debug trace line",M,./CurvedArray.py
+'be28c8f,2026-05-18 14:34,"feat: examples: color eye black",M,./FishingLure.py
+'3f0b1e2,2026-05-18 14:21,"feat: examples: fix eye revolve so that the revolve axis is stable, use a reference instead of a magic id",M,./FishingLure.py
+'2494c24,2026-05-18 14:11,"examples: feat: eye revolve programmatic is working",M,./FishingLure.py
+'997ab54,2026-05-18 13:55,"dev: eye sketch for revolve",A,./~devEnv/examples/generated-sketch-code/Eye_Revolve_Sketch.py
+'7182f77,2026-05-18 13:47,"dev:e xamples: fishing lure add an eye so i can get a nice logo",A,./~devEnv/examples/FishingLure.FCStd
+'6d12188,2026-05-18 13:40,"dev: examples: manual svg stuff to reference later for icon",A,./~devEnv/examples/FishingLure_Page__.svg
+'006bb3a,2026-05-18 13:39,"dev: all manual tests pass",M,./~devEnv/TestingChecklist.md
+'006bb3a,2026-05-18 13:39,"dev: all manual tests pass",A,./~devEnv/research.md
+'3942ee4,2026-05-17 17:11,"feat: examples: cleanup some unnecessary code in script",M,./FishingLure.py
+'275220a,2026-05-17 17:05,"feat: examples: added remaining curved arrays",M,./FishingLure.py
+'6cae233,2026-05-17 16:46,"feat: examples: added second curved array",M,./FishingLure.py
+'f9b11ca,2026-05-17 16:40,"feat: examples: added the first curved array",M,./FishingLure.py
+'e305b56,2026-05-17 16:23,"feat: examples: add three remaining sketches to example",M,./FishingLure.py
+'a37175e,2026-05-17 16:18,"feat: examples: refactor setting up sketches",M,./FishingLure.py
+'f6ce613,2026-05-17 16:13,"dev: example re-draw macro",A,./~devEnv/rerun-example.FCMacro
+'7e2612b,2026-05-17 16:12,"examples: refactor: walk the dog sketch",M,./FishingLure.py
+'0d5233b,2026-05-17 15:58,"feat: examples: add walk the dog sketch",M,./FishingLure.py
+'3c1b4de,2026-05-17 15:33,"examples: dev stuff",M,./~devEnv/examples/bait-to-copy.FCStd
+'3c1b4de,2026-05-17 15:33,"examples: dev stuff",M,./~devEnv/merge-or-pr-todo.md
+'3e84522,2026-05-17 15:32,"feat: examples: scaffold in actual example script",A,./FishingLure.py
+'3e84522,2026-05-17 15:32,"feat: examples: scaffold in actual example script",M,./InitGui.py
+'4a4ff81,2026-05-17 15:16,"example: reverse engineer my sketches",A,./~devEnv/examples/generated-sketch-code/Circle_Front_Profile.py
+'4a4ff81,2026-05-17 15:16,"example: reverse engineer my sketches",A,./~devEnv/examples/generated-sketch-code/Crankbait_Side_Profile.py
+'4a4ff81,2026-05-17 15:16,"example: reverse engineer my sketches",A,./~devEnv/examples/generated-sketch-code/Crankbait_Top_Profile.py
+'4a4ff81,2026-05-17 15:16,"example: reverse engineer my sketches",A,./~devEnv/examples/generated-sketch-code/Flat_Sided_Front_Profile.py
+'4a4ff81,2026-05-17 15:16,"example: reverse engineer my sketches",A,./~devEnv/examples/generated-sketch-code/Walk_the_Dog_Sketch.py
+'4a4ff81,2026-05-17 15:16,"example: reverse engineer my sketches",A,./~devEnv/sketch_parser.FCMacro
+'9b4149c,2026-05-17 14:53,"examples: cleaned up bait to copy",M,./~devEnv/examples/bait-to-copy.FCStd
+'17fb77e,2026-05-17 14:17,"bait-to-copy for examples before i clean it up",A,./~devEnv/examples/bait-to-copy.FCStd
+'ca00b56,2026-05-17 12:41,"dev: example stuff",A,./~devEnv/examples/rand-console-captures.md
+'3b2dc7d,2026-05-17 12:25,"dev: centralize testing notes",M,./~devEnv/PreserveAspectRatio-01-feature.md
+'3b2dc7d,2026-05-17 12:25,"dev: centralize testing notes",M,./~devEnv/PreserveAspectRatio-02-axis-investigation.md
+'3b2dc7d,2026-05-17 12:25,"dev: centralize testing notes",A,./~devEnv/TestingChecklist.md
+'2bebb61,2026-05-17 12:20,"dev: update markdown summaries",A,./~devEnv/PreserveAspectRatio-01-feature.md
+'2bebb61,2026-05-17 12:20,"dev: update markdown summaries",A,./~devEnv/PreserveAspectRatio-02-axis-investigation.md
+'2bebb61,2026-05-17 12:20,"dev: update markdown summaries",A,./~devEnv/PreserveAspectRatio-03-get-rid-of-averaging.md
+'2bebb61,2026-05-17 12:20,"dev: update markdown summaries",D,./~devEnv/PreserveAspectRatio-axis-investigation.md
+'2bebb61,2026-05-17 12:20,"dev: update markdown summaries",D,./~devEnv/PreserveAspectRatio-feature.md
+'e628413,2026-05-17 12:15,"fix: get rid of the scale factor averaging, it didn't make any sense",M,./CurvedArray.py
+'a05f418,2026-05-17 08:43,"dev: reasoning for aspect ratio bail fix",A,./~devEnv/PreserveAspectRatio-axis-investigation.md
+'0a44905,2026-05-17 08:43,"feat: bail from aspect ratio when dominant axis is not clearly defined",M,./CurvedArray.py
+'343432d,2026-05-16 09:59,"dev: commit my sample file I've been working with",A,./~devEnv/debug-curved-shapes.FCStd
+'11f790e,2026-05-16 09:37,"dev: update todos",M,./~devEnv/merge-or-pr-todo.md
+'7685a4f,2026-05-16 09:35,"feat: add preserveaspectratio",M,./CurvedArray.py
+'7685a4f,2026-05-16 09:35,"feat: add preserveaspectratio",M,./CurvedShapes.py
+'5e976c1,2026-05-16 09:20,"dev: implemented feature for the first try, this is dev sidecar stuff, not feature changes",A,./.editorconfig
+'5e976c1,2026-05-16 09:20,"dev: implemented feature for the first try, this is dev sidecar stuff, not feature changes",A,./~devEnv/PreserveAspectRatio-feature.md
+'5e976c1,2026-05-16 09:20,"dev: implemented feature for the first try, this is dev sidecar stuff, not feature changes",A,./~devEnv/merge-or-pr-todo.md
+'0471596,2026-05-15 09:22,"dev refactor: move files around",D,./DebugVsCode-v8.FCMacro
+'0471596,2026-05-15 09:22,"dev refactor: move files around",D,./debug-restart-v2.bat
+'0471596,2026-05-15 09:22,"dev refactor: move files around",D,./debug-restart.bat
+'0471596,2026-05-15 09:22,"dev refactor: move files around",D,./github-forking-workflow.md
+'0471596,2026-05-15 09:22,"dev refactor: move files around",D,./useful-debugging.md
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/DebugVsCode-v8.FCMacro
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/debug-restart.bat
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/github-forking-workflow.md
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/oldMacros/DebugVsCode-v1.FCMacro
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/oldMacros/DebugVsCode-v2.FCMacro
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/oldMacros/DebugVsCode-v3.FCMacro
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/oldMacros/DebugVsCode-v4.FCMacro
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/oldMacros/DebugVsCode-v5.FCMacro
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/oldMacros/DebugVsCode-v6.FCMacro
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/oldMacros/DebugVsCode-v7.FCMacro
+'0471596,2026-05-15 09:22,"dev refactor: move files around",A,./~devEnv/useful-debugging.md
+'f60714c,2026-05-15 04:37,"messy commit here: just backup work so far, reorganize later",A,./.vscode/launch.json
+'f60714c,2026-05-15 04:37,"messy commit here: just backup work so far, reorganize later",M,./CurvedArray.py
+'f60714c,2026-05-15 04:37,"messy commit here: just backup work so far, reorganize later",A,./DebugVsCode-v8.FCMacro
+'f60714c,2026-05-15 04:37,"messy commit here: just backup work so far, reorganize later",A,./debug-restart-v2.bat
+'f60714c,2026-05-15 04:37,"messy commit here: just backup work so far, reorganize later",A,./debug-restart.bat
+'f60714c,2026-05-15 04:37,"messy commit here: just backup work so far, reorganize later",A,./github-forking-workflow.md
+'f60714c,2026-05-15 04:37,"messy commit here: just backup work so far, reorganize later",A,./useful-debugging.md
