@@ -1,0 +1,71 @@
+import FreeCAD as app
+import Sketcher, Part
+
+def createSketch_Crankbait_Side_Profile(doc):
+    Crankbait_Side_Profile = doc.addObject('Sketcher::SketchObject', 'Crankbait_Side_Profile')
+    geo0 = Crankbait_Side_Profile.addGeometry(Part.LineSegment(Vector (0.0, -13.91, 0.0), Vector (65.0, -13.91, 0.0)))
+    Crankbait_Side_Profile.toggleConstruction(geo0)
+    geo1 = Crankbait_Side_Profile.addGeometry(Part.LineSegment(Vector (65.0, -13.91, 0.0), Vector (65.0, 13.91, 0.0)))
+    Crankbait_Side_Profile.toggleConstruction(geo1)
+    geo2 = Crankbait_Side_Profile.addGeometry(Part.LineSegment(Vector (65.0, 13.91, 0.0), Vector (0.0, 13.91, 0.0)))
+    Crankbait_Side_Profile.toggleConstruction(geo2)
+    geo3 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(65.0, -3.43055, 0.0), Vector (0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo3)
+    geo4 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(46.8361, -3.79737, 0.0), Vector (0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo4)
+    geo5 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(24.0673543043263, -21.158894372912883, 0.0), Vector (0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo5)
+    geo6 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(-1.611741877324998, -2.521012393059014, 0.0), Vector (0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo6)
+    geo7 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(-0.3498518594821344, 4.8227987530242125, 0.0), Vector (0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo7)
+    geo8 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(20.613143091401366, 16.44234768240592, 0.0), Vector (0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo8)
+    geo9 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(43.04429502805924, 12.750533643064612, 0.0), Vector (0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo9)
+    geo10 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(65.0, 1.95716, 0.0), Vector (0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo10)
+    geo11 = Crankbait_Side_Profile.addGeometry(Part.BSplineCurve([Vector(65.0, -3.43055, 0.0), Vector(46.8361, -3.79737, 0.0), Vector(24.0673543043263, -21.158894372912883, 0.0), Vector(-1.611741877324998, -2.521012393059014, 0.0), Vector(-0.3498518594821344, 4.8227987530242125, 0.0), Vector(20.613143091401366, 16.44234768240592, 0.0), Vector(43.04429502805924, 12.750533643064612, 0.0), Vector(65.0, 1.95716, 0.0)]))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Coincident', geo0, 2, geo1, 1))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Coincident', geo1, 2, geo2, 1))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Vertical', geo1))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Horizontal', geo0))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Horizontal', geo2))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Distance', geo2, 2, geo1, 2, 65.0))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Distance', geo0, 1, geo2, 2, 27.82))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('PointOnObject', geo2, 2, -2))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Symmetric', geo2, 2, geo0, 1, -1, 1))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Weight', geo3, 1.0))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Equal', geo3, geo4))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Equal', geo3, geo5))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Equal', geo3, geo6))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Equal', geo3, geo7))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Equal', geo3, geo8))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Equal', geo3, geo9))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Equal', geo3, geo10))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('InternalAlignment:Sketcher::BSplineControlPoint', geo3, 3, geo11, 0))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('InternalAlignment:Sketcher::BSplineControlPoint', geo4, 3, geo11, 1))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('InternalAlignment:Sketcher::BSplineControlPoint', geo5, 3, geo11, 2))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('InternalAlignment:Sketcher::BSplineControlPoint', geo6, 3, geo11, 3))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('InternalAlignment:Sketcher::BSplineControlPoint', geo7, 3, geo11, 4))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('InternalAlignment:Sketcher::BSplineControlPoint', geo8, 3, geo11, 5))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('InternalAlignment:Sketcher::BSplineControlPoint', geo9, 3, geo11, 6))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('InternalAlignment:Sketcher::BSplineControlPoint', geo10, 3, geo11, 7))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('PointOnObject', geo3, 3, geo1))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('PointOnObject', geo10, 3, geo1))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('Block', geo11))
+    Crankbait_Side_Profile.addConstraint(Sketcher.Constraint('DistanceY', geo11, 1, geo11, 2, 5.38771))
+    Crankbait_Side_Profile.AttacherEngine = 'Engine Plane'
+    Crankbait_Side_Profile.Placement = Placement(Vector(0.0, 0.0, 0.0), Rotation (0.5, 0.5, 0.5, 0.4999999999999999))
+    Crankbait_Side_Profile.Visibility = False
+    Crankbait_Side_Profile.ViewObject.AngularDeflection = 28.5
+    Crankbait_Side_Profile.ViewObject.PointSize = 2.0
+    Crankbait_Side_Profile.ViewObject.Visibility = False
+    return Crankbait_Side_Profile
+
+def make_doc():
+    doc = app.newDocument('bait_to_copy')
+    Crankbait_Side_Profile = createSketch_Crankbait_Side_Profile(doc)
+    doc.recompute()
+
+make_doc()
