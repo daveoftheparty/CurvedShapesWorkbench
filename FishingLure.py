@@ -22,6 +22,23 @@ def make_Walk_the_Dog_Sketch(doc):
     return Walk_the_Dog_Sketch
 
 
+def make_Circle_Front_Profile_Sketch(doc):
+    Circle_Front_Profile = doc.addObject('Sketcher::SketchObject', 'Circle_Front_Profile')
+    Circle_Front_Profile.Label = 'Circle Front Profile'
+    Circle_Front_Profile.addGeometry(Part.Circle(Vector(0.0, 0.0, 0.0), Vector(0.0, 0.0, 1.0), 3.0))
+    Circle_Front_Profile.AttacherEngine = 'Engine Plane'
+    Circle_Front_Profile.Placement = Placement(Vector(0.0, 0.0, 0.0), Rotation(0.7071067811865476, 0.0, 0.0, 0.7071067811865475))
+    Circle_Front_Profile.Visibility = False
+    Circle_Front_Profile.ViewObject.Visibility = False
+    return Circle_Front_Profile
+
+
+def setup_sketches(doc):
+    sketches_group = doc.addObject('App::DocumentObjectGroup', 'Sketches')
+    sketches_group.addObject(make_Walk_the_Dog_Sketch(doc))
+    sketches_group.addObject(make_Circle_Front_Profile_Sketch(doc))
+
+
 def draw_FishingLure():
     if FreeCAD.ActiveDocument is not None and FreeCAD.ActiveDocument.Name == "FishingLure":
         FreeCAD.closeDocument(FreeCAD.ActiveDocument.Name)
@@ -30,8 +47,7 @@ def draw_FishingLure():
 
     doc = FreeCAD.newDocument('FishingLure')
 
-    sketches_group = doc.addObject('App::DocumentObjectGroup', 'Sketches')
-    sketches_group.addObject(make_Walk_the_Dog_Sketch(doc))
+    setup_sketches(doc)
 
     doc.recompute()
     FreeCADGui.activeDocument().activeView().viewIsometric()
