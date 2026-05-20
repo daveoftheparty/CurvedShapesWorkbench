@@ -173,7 +173,6 @@ class CurvedArray:
         basebbox = obj.Base.Shape.BoundBox
         ax = obj.Axis
 
-        # Identify the primary axis (most aligned with Axis) and the two cross-section axes
         axabs = [abs(ax.x), abs(ax.y), abs(ax.z)]
         sorted_abs = sorted(axabs, reverse=True)
         if sorted_abs[0] - sorted_abs[1] < 0.1:
@@ -185,29 +184,30 @@ class CurvedArray:
         constrained = [i for i in cross_axes if doScaleXYZ[i]]
         unconstrained = [i for i in cross_axes if not doScaleXYZ[i]]
 
-        if not constrained or not unconstrained:
+        if len(constrained) != 1 or len(unconstrained) != 1:
             return bbox, doScaleXYZ
+
+        c = constrained[0]
+        u = unconstrained[0]
 
         base_lengths = [basebbox.XLength, basebbox.YLength, basebbox.ZLength]
         bbox_lengths = [bbox.XLength, bbox.YLength, bbox.ZLength]
 
-        scale_factors = [bbox_lengths[i] / base_lengths[i] for i in constrained if base_lengths[i] > epsilon]
-        if not scale_factors:
+        if base_lengths[c] <= epsilon:
             return bbox, doScaleXYZ
 
-        scale_factor = sum(scale_factors) / len(scale_factors)
+        scale_factor = bbox_lengths[c] / base_lengths[c]
 
         base_mins = [basebbox.XMin, basebbox.YMin, basebbox.ZMin]
         base_maxs = [basebbox.XMax, basebbox.YMax, basebbox.ZMax]
         mins = [bbox.XMin, bbox.YMin, bbox.ZMin]
         maxs = [bbox.XMax, bbox.YMax, bbox.ZMax]
 
-        for i in unconstrained:
-            new_length = base_lengths[i] * scale_factor
-            center = (base_mins[i] + base_maxs[i]) / 2
-            mins[i] = center - new_length / 2
-            maxs[i] = center + new_length / 2
-            doScaleXYZ[i] = True
+        new_length = base_lengths[u] * scale_factor
+        center = (base_mins[u] + base_maxs[u]) / 2
+        mins[u] = center - new_length / 2
+        maxs[u] = center + new_length / 2
+        doScaleXYZ[u] = True
 
         return FreeCAD.BoundBox(mins[0], mins[1], mins[2], maxs[0], maxs[1], maxs[2]), doScaleXYZ
 
