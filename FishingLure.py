@@ -7,6 +7,11 @@ from FreeCAD import Vector, Rotation, Placement
 from PySide.QtCore import QT_TRANSLATE_NOOP
 
 
+def force_show(array):
+    array.Solid = not array.Solid
+    array.Solid = not array.Solid
+
+
 def make_Walk_the_Dog_Sketch(doc):
     Walk_the_Dog_Sketch = doc.addObject('Sketcher::SketchObject', 'Walk_the_Dog_Side_Profile')
     Walk_the_Dog_Sketch.Label = 'Walk the Dog Side Profile'
@@ -132,12 +137,30 @@ def make_Flat_Sided_Front_Profile_Sketch(doc):
 
 
 def setup_sketches(doc):
+    walk_the_dog = make_Walk_the_Dog_Sketch(doc)
+    circle_front = make_Circle_Front_Profile_Sketch(doc)
+    crankbait_side = make_Crankbait_Side_Profile_Sketch(doc)
+    crankbait_top = make_Crankbait_Top_Profile_Sketch(doc)
+    flat_sided_front = make_Flat_Sided_Front_Profile_Sketch(doc)
     sketches_group = doc.addObject('App::DocumentObjectGroup', 'Sketches')
-    sketches_group.addObject(make_Walk_the_Dog_Sketch(doc))
-    sketches_group.addObject(make_Circle_Front_Profile_Sketch(doc))
-    sketches_group.addObject(make_Crankbait_Side_Profile_Sketch(doc))
-    sketches_group.addObject(make_Crankbait_Top_Profile_Sketch(doc))
-    sketches_group.addObject(make_Flat_Sided_Front_Profile_Sketch(doc))
+    for sketch in [walk_the_dog, circle_front, crankbait_side, crankbait_top, flat_sided_front]:
+        sketches_group.addObject(sketch)
+    return walk_the_dog, circle_front, crankbait_side, crankbait_top, flat_sided_front
+
+
+def setup_curved_arrays(walk_the_dog, circle_front, crankbait_side, crankbait_top, flat_sided_front):
+    array1 = CurvedShapes.makeCurvedArray(
+        Base=circle_front,
+        Hullcurves=[walk_the_dog],
+        Items=50,
+        OffsetStart=0.05,
+        OffsetEnd=0.05,
+        Solid=True,
+        Distribution='x³',
+        PreserveAspectRatio=False)
+    array1.Label = 'CurvedArray: Walk the Dog, PreserveAspectRatio = False'
+    array1.Placement = Placement(Vector(0, 0, 45), array1.Placement.Rotation)
+    force_show(array1)
 
 
 def draw_FishingLure():
@@ -148,7 +171,8 @@ def draw_FishingLure():
 
     doc = FreeCAD.newDocument('FishingLure')
 
-    setup_sketches(doc)
+    sketches = setup_sketches(doc)
+    setup_curved_arrays(*sketches)
 
     doc.recompute()
     FreeCADGui.activeDocument().activeView().viewIsometric()
