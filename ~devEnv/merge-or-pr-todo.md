@@ -9,6 +9,8 @@ some things had to be done inline with code, etc. here is a list of things to cl
 - [ ] search for other debug code
 - [ ] remove .editorconfig at root of repo
 - [ ] remove folder devenv
+- [ ] double check icon in FishingLure.py! for naming, etc. because i'm still playing with the svg
+- [ ] check that the original examples either render correctly in fc 1.1, or they are broken and it's not my fault
 
 ## feature todos
 
