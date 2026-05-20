@@ -1,0 +1,26 @@
+import debugpy
+import sys
+import os
+import CurvedShapes
+
+try:
+	print("are we runnin")
+	print("and where are we running", CurvedShapes.__file__)
+	
+	original_argv = sys.argv
+	sys.argv = [sys.argv[0]]
+
+	debugpy.configure(python="C:/Program Files/FreeCAD 1.1/bin/python.exe")
+	debugpy.listen(('localhost', 5678))
+
+	sys.argv = original_argv
+
+	print(f"✅ debugpy: Listening on port 5678 (Python: {sys.executable})")
+
+	debugpy.wait_for_client()
+
+	print("✅ debugpy: Debugger attached!")
+
+except Exception as e:
+	import traceback
+	print("❌ Failed to start debugpy:", traceback.format_exc())

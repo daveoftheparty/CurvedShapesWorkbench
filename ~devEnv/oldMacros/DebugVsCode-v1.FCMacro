@@ -1,0 +1,24 @@
+import debugpy
+import sys
+import os
+
+try:
+	print("are we runnin")
+	# Tell debugpy what Python we're using (important for VSCode attach)
+
+	# this doesn't work because FC 1.0 says <class 'ModuleNotFoundError'>: No module named 'debugpy'
+	# debugpy.configure(python="C:/Program Files/FreeCAD 1.0/bin/python.exe")
+	
+	# try 1.1
+	# debugpy.configure(python="C:/Program Files/FreeCAD 1.1/bin/python.exe")
+	
+	debugpy.listen(('localhost', 5678))
+	print(f"✅ debugpy: Listening on port 5678 (Python: {sys.executable})")
+
+	debugpy.wait_for_client()
+
+	print("✅ debugpy: Debugger attached!")
+
+except Exception as e:
+	import traceback
+	print("❌ Failed to start debugpy:", traceback.format_exc())
