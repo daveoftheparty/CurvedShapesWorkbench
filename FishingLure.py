@@ -134,15 +134,15 @@ def make_Flat_Sided_Front_Profile_Sketch(doc):
 def make_Eye_Revolve_Sketch(doc):
     Eye_Revolve = doc.addObject('Sketcher::SketchObject', 'Eye_Revolve')
     Eye_Revolve.Label = 'Eye Revolve'
-    
+
     Eye_Revolve.addGeometry(Part.ArcOfCircle(Part.Circle(Vector(0.0, -2.8115384615384786, 0.0), Vector (0.0, 0.0, 1.0), 4.111538461538479), 1.5707963267948966, 2.816929336448888))
     Eye_Revolve.addGeometry(Part.LineSegment(Vector (-3.8967442031284882, -1.5000000000000002, 0.0), Vector (0.0, -1.5000000000000002, 0.0)))
-    Eye_Revolve.addGeometry(Part.LineSegment(Vector (0.0, -1.5000000000000002, 0.0), Vector (3e-16, 1.3000000000000005, 0.0)))
-    
+    axis_idx = Eye_Revolve.addGeometry(Part.LineSegment(Vector (0.0, -1.5000000000000002, 0.0), Vector (3e-16, 1.3000000000000005, 0.0)))
+
     Eye_Revolve.AttacherEngine = 'Engine Plane'
     Eye_Revolve.Placement = Placement(Vector(8.299772852249232, 112.70000445296269, 0.8982695431404932), Rotation (0.8020100669887478, 0.5932624670562144, -0.05425347912061805, -0.04331348097748942))
     Eye_Revolve.ViewObject.Visibility = False
-    return Eye_Revolve
+    return Eye_Revolve, f"Edge{axis_idx + 1}"
 
 
 def setup_sketches(doc):
@@ -151,14 +151,12 @@ def setup_sketches(doc):
     crankbait_side = make_Crankbait_Side_Profile_Sketch(doc)
     crankbait_top = make_Crankbait_Top_Profile_Sketch(doc)
     flat_sided_front = make_Flat_Sided_Front_Profile_Sketch(doc)
-    eye_revolve = make_Eye_Revolve_Sketch(doc)
 
     sketches_group = doc.addObject('App::DocumentObjectGroup', 'Sketches')
-    for sketch in [walk_the_dog, circle_front, crankbait_side, crankbait_top, flat_sided_front, eye_revolve]:
+    for sketch in [walk_the_dog, circle_front, crankbait_side, crankbait_top, flat_sided_front]:
         sketches_group.addObject(sketch)
-    
-    # eye_revolve explicitly not returned since it isn't used in curved arrays
-    return walk_the_dog, circle_front, crankbait_side, crankbait_top, flat_sided_front
+
+    return sketches_group, walk_the_dog, circle_front, crankbait_side, crankbait_top, flat_sided_front
 
 
 def setup_curved_arrays(walk_the_dog, circle_front, crankbait_side, crankbait_top, flat_sided_front):
@@ -222,17 +220,19 @@ def setup_curved_arrays(walk_the_dog, circle_front, crankbait_side, crankbait_to
     force_show(array5)
 
 
-def add_single_eye(doc):
+def add_single_eye(doc, sketches_group):
     # now add an eye to a single lure, this is to help in creating an svg icon for the example, but also to bring this example to life
+    eye_sketch, axis_edge = make_Eye_Revolve_Sketch(doc)
+    sketches_group.addObject(eye_sketch)
+
     revolve = doc.addObject("Part::Revolution", "Revolve")
-    revolve.Source = doc.Eye_Revolve
+    revolve.Source = eye_sketch
     revolve.Axis = (0.946905127819621, -0.292327175095973, -0.133848801299506)
     revolve.Base = (9.530749518414741, 112.319979125337923, 0.724266101451136)
     revolve.Angle = 360.0
     revolve.Solid = True
-    revolve.AxisLink = (doc.Eye_Revolve, "Edge3")
+    revolve.AxisLink = (eye_sketch, axis_edge)
     revolve.Symmetric = False
-    doc.Eye_Revolve.ViewObject.Visibility = False
 
 
 def draw_FishingLure():
@@ -243,10 +243,10 @@ def draw_FishingLure():
 
     doc = FreeCAD.newDocument('FishingLure')
 
-    sketches = setup_sketches(doc)
+    sketches_group, *sketches = setup_sketches(doc)
     setup_curved_arrays(*sketches)
 
-    add_single_eye(doc)
+    add_single_eye(doc, sketches_group)
     
     doc.recompute()
     FreeCADGui.activeDocument().activeView().viewIsometric()
