@@ -148,14 +148,3 @@ the axis must be within ~42° of a coordinate axis for aspect ratio adjustment t
 closer to 45° than that get a warning and fall back to default (non-aspect-ratio) scaling —
 explicit, user-visible, no silent wrong geometry.
 
----
-
-## Testing Notes
-
-The existing testing checklist in `PreserveAspectRatio-feature.md` covers the axis-aligned cases.
-Add:
-
-- [ ] Base shape on a 45°-around-Y datum plane + `PreserveAspectRatio=True` → warning printed,
-      output matches `PreserveAspectRatio=False` (falls back to default scaling)
-- [ ] Base shape at ~30° tilt (clearly dominant axis, difference > 0.1) → no warning, aspect
-      ratio correctly preserved

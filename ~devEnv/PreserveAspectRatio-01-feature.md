@@ -81,16 +81,7 @@ When using CurvedArray with a circle as the Base and a single hull curve (e.g., 
 
 - **`makeCurvedArray()`** — added `PreserveAspectRatio=False` parameter and passes it through to `CurvedArray.CurvedArray(...)`.
 
----
 
-## Testing Checklist
-
-- [ ] Circle base + single XZ hull curve (taper) → ribs should remain circular, uniformly scaled
-- [ ] Circle base + single XZ hull curve → `PreserveAspectRatio=False` (default) still produces ellipses (no regression)
-- [ ] Non-circular base (e.g., rectangle) + single hull curve + `PreserveAspectRatio=True` → uniform scale
-- [ ] `PreserveAspectRatio=True` with two hull curves → warning printed, output unchanged from default behavior
-- [ ] Existing documents without the property load without error (backwards compat via `onChanged`)
-- [ ] `Surface=True` and `Solid=True` modes work correctly with preserved aspect ratio
 
 ---
 
