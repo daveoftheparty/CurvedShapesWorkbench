@@ -175,6 +175,39 @@ def setup_curved_arrays(walk_the_dog, circle_front, crankbait_side, crankbait_to
     array2.Placement = Placement(Vector(0, 100, 45), array2.Placement.Rotation)
     force_show(array2)
 
+    array3 = CurvedShapes.makeCurvedArray(
+        Base=flat_sided_front,
+        Hullcurves=[crankbait_side],
+        Items=50,
+        Solid=True,
+        Distribution='x³',
+        PreserveAspectRatio=False)
+    array3.Label = 'CurvedArray: Crankbait, PreserveAspectRatio = False'
+    force_show(array3)
+
+    array4 = CurvedShapes.makeCurvedArray(
+        Base=flat_sided_front,
+        Hullcurves=[crankbait_side],
+        Items=50,
+        Solid=True,
+        Distribution='x³',
+        PreserveAspectRatio=True)
+    array4.Label = 'CurvedArray: Crankbait, PreserveAspectRatio = True'
+    array4.Placement = Placement(Vector(0, 100, 0), array4.Placement.Rotation)
+    force_show(array4)
+
+    array5 = CurvedShapes.makeCurvedArray(
+        Base=flat_sided_front,
+        Hullcurves=[crankbait_side, crankbait_top],
+        Items=50,
+        OffsetStart=0.05,
+        OffsetEnd=0.05,
+        Solid=True,
+        Distribution='x³')
+    array5.Label = 'CurvedArray: Crankbait, Side & Top Hullcurves'
+    array5.Placement = Placement(Vector(0, 50, -45), array5.Placement.Rotation)
+    force_show(array5)
+
 
 def draw_FishingLure():
     if FreeCAD.ActiveDocument is not None and FreeCAD.ActiveDocument.Name == "FishingLure":
