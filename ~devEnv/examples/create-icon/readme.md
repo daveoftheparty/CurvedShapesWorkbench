@@ -16,7 +16,8 @@
 | FishingLure_Page__v1-v3.svg | in this file, i add a copy of the techdraw lines to help give the lure some visual shape. file size is big though, it has two copies of techdraw export. it also doesn't render nice outside of inkscape due to line sizes-- in inkscape when i switch stroke style from pixels to hairline, it doesn't actually update stroke size, so lines are massive. that and the two copies of techdraw makes the file too big. Also in this file, I get black pupil reflection shading nailed. |
 | FishingLure_Page__v1-v4.svg | I start to reduce file size by getting rid of duplicate techdraw groups, and flattening the nested subgroups (using Claude) for easier editing. still has the stroke width problem on techdraw paths. |
 | FishingLure_Page__v1-v5.svg | with help of Claude, further reduce file size by taking all the redundant path attributes and moving them to parent group |
-| ***FishingLure_Page__v1-v6.svg*** | further reduce file size with Claude, getting rid of some inkscape metadata, including xml describing recently used gradients. this is the first icon i actually attach to the Examples menu in the workbench in FreeCAD and have a good visual look at in the GUI |
+| ***FishingLure_Page__v1-v6.svg*** | further reduce file size with Claude, getting rid of some inkscape metadata, including xml describing recently used gradients. this is the first icon i actually attach to the Examples menu in the workbench in FreeCAD and have a good visual look at in the GUI. it's kind of a baby bass color scheme with a brownish back, greenish flank, bone belly-- lots of gradients |
+| ***FishingLure_Page__v1-v7.svg*** | working on coloring only. got a firetiger-style gradient, this time a three stop gradient between blue, yellow, orange. I forgot the top of firetiger should be green :D |
 
 
 
