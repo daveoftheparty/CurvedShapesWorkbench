@@ -8,7 +8,8 @@ from PySide.QtCore import QT_TRANSLATE_NOOP
 
 
 def make_Walk_the_Dog_Sketch(doc):
-    Walk_the_Dog_Sketch = doc.addObject('Sketcher::SketchObject', 'Walk_the_Dog_Sketch')
+    Walk_the_Dog_Sketch = doc.addObject('Sketcher::SketchObject', 'Walk_the_Dog_Side_Profile')
+    Walk_the_Dog_Sketch.Label = 'Walk the Dog Side Profile'
     Walk_the_Dog_Sketch.addGeometry(Part.ArcOfCircle(Part.Circle(Vector(23.76380626473026, 145.9709209274943, 0.0), Vector(0.0, 0.0, 1.0), 153.9709209274943), 4.59835586832567, 4.96793137941701))
     Walk_the_Dog_Sketch.addGeometry(Part.ArcOfCircle(Part.Circle(Vector(23.763806264730338, -145.9709209274943, 0.0), Vector(0.0, 0.0, 1.0), 153.9709209274943), 1.3152539277625774, 1.6848294388539173))
     Walk_the_Dog_Sketch.addGeometry(Part.ArcOfCircle(Part.Circle(Vector(7.045760331163319, 0.0, 0.0), Vector(0.0, 0.0, 1.0), 7.045760331163319), 1.6848294388539173, 4.59835586832567))
