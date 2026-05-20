@@ -213,7 +213,6 @@ class CurvedArray:
 
 
     def execute(self, prop):
-        import debugpy; debugpy.trace_this_thread(True)
         if prop.Base and prop.Axis == Vector(0.0,0.0,0.0):
             prop.Axis = CurvedShapes.getNormal(prop.Base)
             return
