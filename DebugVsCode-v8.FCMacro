@@ -1,0 +1,36 @@
+import os
+os.environ["PYDEVD_DISABLE_FILE_VALIDATION"] = "1"
+os.environ["PYDEVD_USE_FROZEN_MODULES"] = "0"
+
+import debugpy
+import sys
+
+try:
+	print("are we runnin")
+
+	original_argv = sys.argv
+	sys.argv = [sys.argv[0]] # this is required for debug adapter's subprocess to launch FreeCAD cleanly
+
+	debugpy.configure(python="C:/Program Files/FreeCAD 1.1/bin/python.exe")
+	if debugpy.is_client_connected():
+		print("⚠️ debugpy: Client already connected, skipping listen.")
+	else:
+		try:
+			debugpy.listen(('localhost', 5678))
+		except RuntimeError as e:
+			if "already being listened" in str(e).lower():
+				print("⚠️ debugpy: Already listening on port 5678, reusing existing session.")
+			else:
+				raise
+
+	sys.argv = original_argv # restore args now that we've listened.
+
+	print(f"✅ debugpy: Listening on port 5678 (Python: {sys.executable})")
+
+	debugpy.wait_for_client()
+
+	print("✅ debugpy: Debugger attached!")
+
+except Exception as e:
+	import traceback
+	print("❌ Failed to start debugpy:", traceback.format_exc())

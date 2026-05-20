@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Python",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "C:/Users/DSPEER/AppData/Roaming/FreeCAD/v1-1/Mod/CurvedShapes",
+                    "remoteRoot": "C:/Users/DSPEER/AppData/Roaming/FreeCAD/v1-1/Mod/CurvedShapes"
+                }
+            ],
+            "justMyCode": false
+        }
+    ]
+}
