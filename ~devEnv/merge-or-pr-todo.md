@@ -14,5 +14,7 @@ some things had to be done inline with code, etc. here is a list of things to cl
 
 - [ ] update readme with note about KeepAspectRatio 
 - [ ] if appropriate, create new screenshots, examples, reasoning behind new parameter
-- [ ] challenge the average note from PreserveAspectRatio-feature.md : `_applyAspectRatio` uses the **average** scale factor if somehow multiple constrained axes are present (shouldn't happen with a single hull curve, but defensive).
+- [ ] create an SVG icon for the FishingLure example
+- [x] challenge the average note from PreserveAspectRatio-feature.md : `_applyAspectRatio` uses the **average** scale factor if somehow multiple constrained axes are present (shouldn't happen with a single hull curve, but defensive).
+
 
