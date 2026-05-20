@@ -233,6 +233,7 @@ def add_single_eye(doc, sketches_group):
     revolve.Solid = True
     revolve.AxisLink = (eye_sketch, axis_edge)
     revolve.Symmetric = False
+    revolve.ViewObject.ShapeColor = (0.0, 0.0, 0.0, 1.0)
 
 
 def draw_FishingLure():
