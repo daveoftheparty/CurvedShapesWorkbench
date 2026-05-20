@@ -97,5 +97,10 @@ When using CurvedArray with a circle as the Base and a single hull curve (e.g., 
 ## Notes / Known Limitations
 
 - When both cross-section axes are constrained (two hull curves), `_applyAspectRatio` returns early — the existing per-axis scaling takes over unchanged. This is intentional.
-- `_applyAspectRatio` uses the **average** scale factor if somehow multiple constrained axes are present (shouldn't happen with a single hull curve, but defensive).
 - The bbox center for the unconstrained axis is derived from the **base shape's** bounding box center, not the hull curve position. This keeps the shape centered relative to the base.
+
+## Fixed original known limitations
+
+No longer concerns:
+
+- `_applyAspectRatio` uses the **average** scale factor if somehow multiple constrained axes are present (shouldn't happen with a single hull curve, but defensive).
