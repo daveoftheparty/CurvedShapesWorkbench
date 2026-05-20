@@ -175,6 +175,10 @@ class CurvedArray:
 
         # Identify the primary axis (most aligned with Axis) and the two cross-section axes
         axabs = [abs(ax.x), abs(ax.y), abs(ax.z)]
+        sorted_abs = sorted(axabs, reverse=True)
+        if sorted_abs[0] - sorted_abs[1] < 0.1:
+            FreeCAD.Console.PrintWarning(translate("Curved Shapes", "PreserveAspectRatio: Axis is not clearly aligned with a coordinate axis — aspect ratio adjustment skipped.\n"))
+            return bbox, doScaleXYZ
         primary = axabs.index(max(axabs))
         cross_axes = [i for i in range(3) if i != primary]
 
