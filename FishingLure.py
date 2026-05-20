@@ -33,10 +33,111 @@ def make_Circle_Front_Profile_Sketch(doc):
     return Circle_Front_Profile
 
 
+def make_Crankbait_Side_Profile_Sketch(doc):
+    Crankbait_Side_Profile = doc.addObject('Sketcher::SketchObject', 'Crankbait_Side_Profile')
+    Crankbait_Side_Profile.Label = 'Crankbait Side Profile'
+    geo0 = Crankbait_Side_Profile.addGeometry(Part.LineSegment(Vector(0.0, -13.91, 0.0), Vector(65.0, -13.91, 0.0)))
+    Crankbait_Side_Profile.toggleConstruction(geo0)
+    geo1 = Crankbait_Side_Profile.addGeometry(Part.LineSegment(Vector(65.0, -13.91, 0.0), Vector(65.0, 13.91, 0.0)))
+    Crankbait_Side_Profile.toggleConstruction(geo1)
+    geo2 = Crankbait_Side_Profile.addGeometry(Part.LineSegment(Vector(65.0, 13.91, 0.0), Vector(0.0, 13.91, 0.0)))
+    Crankbait_Side_Profile.toggleConstruction(geo2)
+    geo3 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(65.0, -3.43055, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo3)
+    geo4 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(46.8361, -3.79737, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo4)
+    geo5 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(24.0673543043263, -21.158894372912883, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo5)
+    geo6 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(-1.611741877324998, -2.521012393059014, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo6)
+    geo7 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(-0.3498518594821344, 4.8227987530242125, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo7)
+    geo8 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(20.613143091401366, 16.44234768240592, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo8)
+    geo9 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(43.04429502805924, 12.750533643064612, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo9)
+    geo10 = Crankbait_Side_Profile.addGeometry(Part.Circle(Vector(65.0, 1.95716, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Side_Profile.toggleConstruction(geo10)
+    Crankbait_Side_Profile.addGeometry(Part.BSplineCurve([Vector(65.0, -3.43055, 0.0), Vector(46.8361, -3.79737, 0.0), Vector(24.0673543043263, -21.158894372912883, 0.0), Vector(-1.611741877324998, -2.521012393059014, 0.0), Vector(-0.3498518594821344, 4.8227987530242125, 0.0), Vector(20.613143091401366, 16.44234768240592, 0.0), Vector(43.04429502805924, 12.750533643064612, 0.0), Vector(65.0, 1.95716, 0.0)]))
+    Crankbait_Side_Profile.AttacherEngine = 'Engine Plane'
+    Crankbait_Side_Profile.Placement = Placement(Vector(0.0, 0.0, 0.0), Rotation(0.5, 0.5, 0.5, 0.4999999999999999))
+    Crankbait_Side_Profile.Visibility = False
+    Crankbait_Side_Profile.ViewObject.Visibility = False
+    return Crankbait_Side_Profile
+
+
+def make_Crankbait_Top_Profile_Sketch(doc):
+    Crankbait_Top_Profile = doc.addObject('Sketcher::SketchObject', 'Crankbait_Top_Profile')
+    Crankbait_Top_Profile.Label = 'Crankbait Top Profile'
+    geo0 = Crankbait_Top_Profile.addGeometry(Part.LineSegment(Vector(-2.693855, 65.0, 0.0), Vector(2.693855, 65.0, 0.0)))
+    Crankbait_Top_Profile.toggleConstruction(geo0)
+    geo1 = Crankbait_Top_Profile.addGeometry(Part.LineSegment(Vector(-18.0603, 21.330741289041082, 0.0), Vector(18.0603, 21.330741289041082, 0.0)))
+    Crankbait_Top_Profile.toggleConstruction(geo1)
+    geo2 = Crankbait_Top_Profile.addGeometry(Part.Point(Vector(-11.128, 21.330741289041082, 0.0)))
+    Crankbait_Top_Profile.toggleConstruction(geo2)
+    geo3 = Crankbait_Top_Profile.addGeometry(Part.Point(Vector(11.128, 21.330741289041082, 0.0)))
+    Crankbait_Top_Profile.toggleConstruction(geo3)
+    geo4 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(-0.0215615665286176, -0.0065573777592247, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo4)
+    geo5 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(-8.744147048549669, 0.0, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo5)
+    geo6 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(-13.213326859405798, 21.330741289041082, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo6)
+    geo7 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(-9.379940000000003, 33.6794, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo7)
+    geo8 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(-2.6873074077592, 64.99938451935192, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo8)
+    Crankbait_Top_Profile.addGeometry(Part.BSplineCurve([Vector(-0.0215615665286176, -0.0065573777592247, 0.0), Vector(-8.744147048549669, 0.0, 0.0), Vector(-13.213326859405798, 21.330741289041082, 0.0), Vector(-9.379940000000003, 33.6794, 0.0), Vector(-2.6873074077592, 64.99938451935192, 0.0)]))
+    geo13 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(0.0, -1e-16, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo13)
+    geo14 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(8.744147048549669, 0.0, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo14)
+    geo15 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(13.213326859405798, 21.330741289041082, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo15)
+    geo16 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(9.379940000000003, 33.6794, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo16)
+    geo17 = Crankbait_Top_Profile.addGeometry(Part.Circle(Vector(2.69386, 65.0, 0.0), Vector(0.0, 0.0, 1.0), 1.0))
+    Crankbait_Top_Profile.toggleConstruction(geo17)
+    Crankbait_Top_Profile.addGeometry(Part.BSplineCurve([Vector(0.0, -1e-16, 0.0), Vector(8.744147048549669, 0.0, 0.0), Vector(13.213326859405798, 21.330741289041082, 0.0), Vector(9.379940000000003, 33.6794, 0.0), Vector(2.69386, 65.0, 0.0)]))
+    Crankbait_Top_Profile.AttacherEngine = 'Engine Plane'
+    Crankbait_Top_Profile.Visibility = False
+    Crankbait_Top_Profile.ViewObject.Visibility = False
+    return Crankbait_Top_Profile
+
+
+def make_Flat_Sided_Front_Profile_Sketch(doc):
+    Flat_Sided_Front_Profile = doc.addObject('Sketcher::SketchObject', 'Flat_Sided_Front_Profile')
+    Flat_Sided_Front_Profile.Label = 'Flat Sided Front Profile'
+    geo0 = Flat_Sided_Front_Profile.addGeometry(Part.LineSegment(Vector(-4.0, -5.0, 0.0), Vector(4.0, -5.0, 0.0)))
+    Flat_Sided_Front_Profile.toggleConstruction(geo0)
+    geo1 = Flat_Sided_Front_Profile.addGeometry(Part.LineSegment(Vector(4.0, -5.0, 0.0), Vector(4.0, 5.0, 0.0)))
+    Flat_Sided_Front_Profile.toggleConstruction(geo1)
+    geo2 = Flat_Sided_Front_Profile.addGeometry(Part.LineSegment(Vector(4.0, 5.0, 0.0), Vector(-4.0, 5.0, 0.0)))
+    Flat_Sided_Front_Profile.toggleConstruction(geo2)
+    geo3 = Flat_Sided_Front_Profile.addGeometry(Part.LineSegment(Vector(-4.0, 5.0, 0.0), Vector(-4.0, -5.0, 0.0)))
+    Flat_Sided_Front_Profile.toggleConstruction(geo3)
+    geo4 = Flat_Sided_Front_Profile.addGeometry(Part.Point(Vector(-0.0, -0.0, 0.0)))
+    Flat_Sided_Front_Profile.toggleConstruction(geo4)
+    Flat_Sided_Front_Profile.addGeometry(Part.ArcOfCircle(Part.Circle(Vector(0.0, -1.7137884072761502, 0.0), Vector(0.0, 0.0, 1.0), 3.2862115927238498), 3.2901830214447942, 6.134594939324585))
+    Flat_Sided_Front_Profile.addGeometry(Part.ArcOfCircle(Part.Circle(Vector(0.0, -3.5000000000000004, 0.0), Vector(0.0, 0.0, 1.0), 8.5), 1.2030598901251002, 1.9385327634634626))
+    Flat_Sided_Front_Profile.addGeometry(Part.LineSegment(Vector(-4.0, 2.809938199485819, 0.0), Vector(-3.2499999999999996, -2.2002929110092886, 0.0)))
+    Flat_Sided_Front_Profile.addGeometry(Part.LineSegment(Vector(4.0, 2.8099381994860955, 0.0), Vector(3.249999999999999, -2.200292911009289, 0.0)))
+    Flat_Sided_Front_Profile.addGeometry(Part.ArcOfCircle(Part.Circle(Vector(-2.5165288775701584, 3.0320044709381633, 0.0), Vector(0.0, 0.0, 1.0), 1.5), 1.9385327634636262, 3.290183021444784))
+    Flat_Sided_Front_Profile.addGeometry(Part.ArcOfCircle(Part.Circle(Vector(2.5165288775700403, 3.032004470937678, 0.0), Vector(0.0, 0.0, 1.0), 1.5), 6.13459493932511, 7.486245197298824))
+    Flat_Sided_Front_Profile.AttacherEngine = 'Engine Plane'
+    Flat_Sided_Front_Profile.Placement = Placement(Vector(0.0, 0.0, 0.0), Rotation(0.7071067811865476, 0.0, 0.0, 0.7071067811865475))
+    Flat_Sided_Front_Profile.Visibility = False
+    Flat_Sided_Front_Profile.ViewObject.Visibility = False
+    return Flat_Sided_Front_Profile
+
+
 def setup_sketches(doc):
     sketches_group = doc.addObject('App::DocumentObjectGroup', 'Sketches')
     sketches_group.addObject(make_Walk_the_Dog_Sketch(doc))
     sketches_group.addObject(make_Circle_Front_Profile_Sketch(doc))
+    sketches_group.addObject(make_Crankbait_Side_Profile_Sketch(doc))
+    sketches_group.addObject(make_Crankbait_Top_Profile_Sketch(doc))
+    sketches_group.addObject(make_Flat_Sided_Front_Profile_Sketch(doc))
 
 
 def draw_FishingLure():
