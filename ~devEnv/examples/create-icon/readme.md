@@ -21,6 +21,8 @@
 | ***FishingLure_Page__v1-v8.svg*** | firetiger green-yellow-orange, also eliminating the black and white 1px outlines to see if things look better with antialiasing |
 | ***FishingLure_Page__v1-v9.svg*** | let's try to do solid section colors instead of gradients, sticking with firetiger theme. also, gonna take screen shots of this rendering with NO outlines, just three color swatches with no black. |
 | ***FishingLure_Page__v1-v91.svg*** | three swatches, but with .3 px outlines |
+| ***FishingLure_Page__v1-v92.svg*** | edited flank to make it smoother and a larger yellow area |
+| ***FishingLure_Page__v1-v93.svg*** | rotated lure a little and made it 63.5px wide for maximum size |
 
 
 
