@@ -220,6 +220,10 @@ A python script that creates the shape of a flying wing RC model.
 ### Faster Better Corsair |JOKO ENGINEERING|
 [!["FreeCAD Curved Surfaces Workbench in Action: Faster Better Corsair |JOKO ENGINEERING|"](http://img.youtube.com/vi/tjT9gt0dArQ/0.jpg)](http://www.youtube.com/watch?v=tjT9gt0dArQ "FreeCAD Curved Surfaces Workbench in Action: Faster Better Corsair |JOKO ENGINEERING|") 
 
+### ![FishingLure_Icon](./~devEnv/examples/create-icon/FishingLure_Page__v1-v6.svg)
+
+Create a fishing lure!! screenshot to come...
+
 ## Discussion
 Please offer feedback or connect with the developer via the [dedicated FreeCAD forum thread](https://forum.freecadweb.org/viewtopic.php?f=8&t=36989).
 
