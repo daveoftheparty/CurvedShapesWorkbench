@@ -1,0 +1,16 @@
+from PySide6 import QtWidgets
+import importlib, FishingLure
+
+# Clear report view
+mw = FreeCADGui.getMainWindow()
+report = mw.findChild(QtWidgets.QTextEdit, "Report view")
+if report:
+    report.clear()
+
+# Clear Python console
+console_dock = mw.findChild(QtWidgets.QDockWidget, "Python console")
+if console_dock and hasattr(console_dock.widget(), 'clear'):
+    console_dock.widget().clear()
+
+importlib.reload(FishingLure)
+FishingLure.draw_FishingLure()
